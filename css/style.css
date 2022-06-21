@@ -6,7 +6,7 @@
 .grilla {
     display: grid;
     grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
-    grid-template-rows: 1fr 2.5fr 2.5fr 1fr;
+    grid-template-rows:none ;
     grid-template-areas:
         "nav nav nav nav"
         "header header header header"
@@ -25,11 +25,11 @@
     flex-direction: row;
     background-color: rgb(37, 31, 33);
     justify-content: end;
+    max-height: 5rem;
 }
 
 .nav ul {
     width: 100%;
-    padding: 0 auto;
 }
 
 .nav li {
@@ -78,6 +78,37 @@ ul {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.container{
+    grid-area: primeraSeccion;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.container div {
+    display: flex;
+    margin: none;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.container img {
+    max-width: 400px;
+    max-height: 400px;
+    margin-left: 2rem;
+}
+
+.container2{
+    grid-area: segundaSeccion;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.container2 img {
+    max-width: 1000px;
+    max-height: 400px;
+    margin-left: 2rem;
+}
 /* Footer */
 .footer {
     grid-area: footer;
@@ -105,10 +136,11 @@ ul {
 /* Formulario */
 
 .form {
-    grid-area: form;
+    grid-area: header;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
 }
 
 .form h1 {
