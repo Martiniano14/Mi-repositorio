@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// Import
+
+@import './variables/extend';
+@import './variables/colores';
+
+@import './secciones/header.scss';
+@import './secciones/footer.scss';
+@import './secciones/form.scss';
+@import './secciones/main.scss';
+@import './secciones/nav.scss';
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+    grid-template-rows:none ;
+    grid-template-areas:
+        "nav nav nav nav"
+        "header header header header"
+        "primeraSeccion form form segundaSeccion"
+        "primeraSeccion form form segundaSeccion"
+        "footer footer footer footer";
+    background-color: rgb(59, 50, 53);
+    color: white;
+}
+
+// Modificacion Pendiente //
+
+@media (max-width: 768px) {
+    .grilla {
+        grid-template-areas:
+            "nav nav nav nav"
+            "header header header header"
+            "primeraSeccion primeraSeccion primeraSeccion primeraSeccion"
+            "segundaSeccion segundaSeccion segundaSeccion segundaSeccion"
+            "form form form form"
+            "footer footer footer footer";
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+}

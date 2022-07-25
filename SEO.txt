@@ -1,0 +1,7 @@
+//SEO//
+
+1-Modifique todos los titulos.
+2-Agregue keywords.
+3-Agregue descripciones.
+4-Cree la carpeta pages y modifique los respestivos anclajes.
+

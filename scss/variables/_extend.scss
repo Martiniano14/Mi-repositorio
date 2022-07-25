@@ -1,0 +1,9 @@
+%estiloNav{
+    color: lighten($color: #000000, $amount: 50);
+    list-style: none;
+}
+
+@mixin body ($colorFondo, $TextoPrimario){
+    background-color: $colorFondo;
+    color: $TextoPrimario;
+}

@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  grid-area: header;
+  text-align: center;
+  background-color: #23211d;
+  color: white;
+  height: 15vh;
+  padding-top: 30px; }
+  .header p {
+    max-width: 850px;
+    margin: 0 auto; }
+  .header h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: rgba(28, 49, 69, 0.717); }
+
+.iglogo {
+  width: 30px;
+  height: 30px; }
+
+.titulofooter {
+  grid-area: footer;
+  display: flex;
+  flex-grow: 1; }
+
+.form {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem; }
+  .form h1 {
+    grid-area: header;
+    font-size: 2rem; }
+
+.container {
+  grid-area: primeraSeccion;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem; }
+  .container div {
+    display: flex;
+    margin: none;
+    flex-direction: column-reverse;
+    align-items: center; }
+  .container img {
+    max-width: 400px;
+    max-height: 400px;
+    margin-left: 2rem; }
+
+.container2 {
+  grid-area: segundaSeccion;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem; }
+  .container2 img {
+    max-width: 1000px;
+    max-height: 400px;
+    margin-left: 2rem; }
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: #251f21;
+  justify-content: end;
+  max-height: 5rem; }
+  .nav ul {
+    width: 100%;
+    font-family: Rubik, sans-serif;
+    text-decoration: none; }
+  .nav li {
+    list-style: none;
+    padding: 30px;
+    text-align: center; }
+  .nav a {
+    text-decoration: none;
+    color: wheat; }
+    .nav a:hover {
+      color: black;
+      font-weight: 500; }
+
+.logo {
+  width: 160px;
+  height: 80px;
+  display: block; }
+
+.grilla {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+  grid-template-rows: none;
+  grid-template-areas: "nav nav nav nav" "header header header header" "primeraSeccion form form segundaSeccion" "primeraSeccion form form segundaSeccion" "footer footer footer footer";
+  background-color: #3b3235;
+  color: white; }
+
+@media (max-width: 768px) {
+  .grilla {
+    grid-template-areas: "nav nav nav nav" "header header header header" "primeraSeccion primeraSeccion primeraSeccion primeraSeccion" "segundaSeccion segundaSeccion segundaSeccion segundaSeccion" "form form form form" "footer footer footer footer"; }
+  .nav {
+    display: flex; }
+  .nav ul {
+    display: flex;
+    flex-direction: row; } }

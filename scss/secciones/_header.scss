@@ -1,0 +1,15 @@
+.header {
+    grid-area: header;
+    text-align: center;
+    background-color: rgb(35, 33, 29);
+    color: white;
+    height: 15vh;
+    padding-top: 30px;
+    p {
+        max-width: 850px;
+        margin: 0 auto;
+    }
+    h1 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}

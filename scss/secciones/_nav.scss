@@ -1,0 +1,40 @@
+.nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(37, 31, 33);
+    justify-content: end;
+    max-height: 5rem;
+    
+    ul {
+        width: 100%;
+        font-family: Rubik, sans-serif;
+        text-decoration: none;
+        @extend %estiloNav;
+    }
+
+    li {
+        list-style: none;
+        padding: 30px;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: wheat;
+
+        &:hover {
+            color: black;
+            font-weight: 500;
+        }
+    }
+
+}
+
+.logo {
+    width: 160px;
+    height: 80px;
+    display: block;
+}
+
